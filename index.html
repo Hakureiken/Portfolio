@@ -50,11 +50,11 @@
         </div>
         <div class="row justify-content-center">
             <h3>Exercice d'algorithme</h3>
-            <div class="col-md-6 text-start echec">
+            <div class="col-md-6 text-start echec" id="echec">
                 <h4>Exercice de l'échiquier</h4>
                 <p>Ici vous pouvez changer l'échiquier pour savoir si un cavalier blanc (noté C en majuscule) peut prendre une pièce noire (noté en minuscule)</p>
-                <div class="row justify-content-start">
-                    <div class="damier black">
+                <div class="row">
+                    <div class="damier black" id="result">
                         <input type="text" placeholder="A1">
                     </div>
                     <div class="damier white text-center">
@@ -107,135 +107,162 @@
                 </div>
                 <div class="row">
                     <div class="damier black">
+                        <input type="text" placeholder="C1">
+                    </div>
+                    <div class="damier white">
+                        <input type="text" placeholder="C2">
+                    </div>
+                    <div class="damier black">
+                        <input type="text" placeholder="C3">
+                    </div>
+                    <div class="damier white">
+                        <input type="text" placeholder="C4">
+                    </div>
+                    <div class="damier black">
+                        <input type="text" placeholder="C5">
+                    </div>
+                    <div class="damier white">
+                        <input type="text" placeholder="C6">
+                    </div>
+                    <div class="damier black">
+                        <input type="text" placeholder="C7">
+                    </div>
+                    <div class="damier white">
+                        <input type="text" placeholder="C8">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="damier white">
                         <input type="text" placeholder="D1">
                     </div>
-                    <div class="damier white">
+                    <div class="damier black">
                         <input type="text" placeholder="D2">
                     </div>
-                    <div class="damier black">
+                    <div class="damier white">
                         <input type="text" placeholder="D3">
                     </div>
-                    <div class="damier white">
+                    <div class="damier black">
                         <input type="text" placeholder="D4">
                     </div>
-                    <div class="damier black">
+                    <div class="damier white">
                         <input type="text" placeholder="D5">
                     </div>
-                    <div class="damier white">
+                    <div class="damier black">
                         <input type="text" placeholder="D6">
                     </div>
-                    <div class="damier black">
+                    <div class="damier white">
                         <input type="text" placeholder="D7">
                     </div>
-                    <div class="damier white">
+                    <div class="damier black">
                         <input type="text" placeholder="D8">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="damier white">
+                    <div class="damier black">
                         <input type="text" placeholder="E1">
                     </div>
-                    <div class="damier black">
+                    <div class="damier white">
                         <input type="text" placeholder="E2">
                     </div>
-                    <div class="damier white">
+                    <div class="damier black">
                         <input type="text" placeholder="E3">
                     </div>
-                    <div class="damier black">
+                    <div class="damier white">
                         <input type="text" placeholder="E4">
                     </div>
-                    <div class="damier white">
+                    <div class="damier black">
                         <input type="text" placeholder="E5">
                     </div>
-                    <div class="damier black">
+                    <div class="damier white">
                         <input type="text" placeholder="E6">
                     </div>
-                    <div class="damier white">
+                    <div class="damier black">
                         <input type="text" placeholder="E7">
                     </div>
-                    <div class="damier black">
+                    <div class="damier white">
                         <input type="text" placeholder="E8">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="damier black">
-                        <input type="text" placeholder="F1">
-                    </div>
-                    <div class="damier white">
-                        <input type="text" placeholder="F2">
-                    </div>
-                    <div class="damier black">
-                        <input type="text" placeholder="F3">
-                    </div>
-                    <div class="damier white">
-                        <input type="text" placeholder="F4">
-                    </div>
-                    <div class="damier black">
-                        <input type="text" placeholder="F5">
-                    </div>
-                    <div class="damier white">
-                        <input type="text" placeholder="F6">
-                    </div>
-                    <div class="damier black">
-                        <input type="text" placeholder="F7">
-                    </div>
-                    <div class="damier white">
-                        <input type="text" placeholder="F8">
                     </div>
                 </div>
                 
                 <div class="row">
                     <div class="damier white">
-                        <input type="text" placeholder="G1">
+                        <input type="text" placeholder="F1">
                     </div>
                     <div class="damier black">
-                        <input type="text" placeholder="G2">
+                        <input type="text" placeholder="F2">
                     </div>
                     <div class="damier white">
-                        <input type="text" placeholder="G3">
+                        <input type="text" placeholder="F3">
                     </div>
                     <div class="damier black">
-                        <input type="text" placeholder="G4">
+                        <input type="text" placeholder="F4">
                     </div>
                     <div class="damier white">
-                        <input type="text" placeholder="G5">
+                        <input type="text" placeholder="F5">
                     </div>
                     <div class="damier black">
-                        <input type="text" placeholder="G6">
+                        <input type="text" placeholder="F6">
                     </div>
                     <div class="damier white">
-                        <input type="text" placeholder="G7">
+                        <input type="text" placeholder="F7">
                     </div>
                     <div class="damier black">
-                        <input type="text" placeholder="G8">
+                        <input type="text" placeholder="F8">
                     </div>
                 </div>
                 <div class="row">
                     <div class="damier black">
+                        <input type="text" placeholder="G1">
+                    </div>
+                    <div class="damier white">
+                        <input type="text" placeholder="G2">
+                    </div>
+                    <div class="damier black">
+                        <input type="text" placeholder="G3">
+                    </div>
+                    <div class="damier white">
+                        <input type="text" placeholder="G4">
+                    </div>
+                    <div class="damier black">
+                        <input type="text" placeholder="G5">
+                    </div>
+                    <div class="damier white">
+                        <input type="text" placeholder="G6">
+                    </div>
+                    <div class="damier black">
+                        <input type="text" placeholder="G7">
+                    </div>
+                    <div class="damier white">
+                        <input type="text" placeholder="G8">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="damier white">
                         <input type="text" placeholder="H1">
                     </div>
-                    <div class="damier white">
+                    <div class="damier black">
                         <input type="text" placeholder="H2">
                     </div>
-                    <div class="damier black">
+                    <div class="damier white">
                         <input type="text" placeholder="H3">
                     </div>
-                    <div class="damier white">
+                    <div class="damier black">
                         <input type="text" placeholder="H4">
                     </div>
-                    <div class="damier black">
+                    <div class="damier white">
                         <input type="text" placeholder="H5">
                     </div>
-                    <div class="damier white">
+                    <div class="damier black">
                         <input type="text" placeholder="H6">
                     </div>
-                    <div class="damier black">
+                    <div class="damier white">
                         <input type="text" placeholder="H7">
                     </div>
-                    <div class="damier white">
+                    <div class="damier black">
                         <input type="text" placeholder="H8">
                     </div>
                 </div>
+                <button id="startechec" type="submit" class="startechec">Lancez le test pour savoir si un cavalier blanc (C) peut prendre une pièce noire</button>
                 
             </div>
             <div class="col-md-6 text-center" id="containermonnaie">
