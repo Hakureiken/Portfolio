@@ -57,10 +57,10 @@ if (argent === somme) {
 }
 
 piece = piece.substring(0, piece.length -1);
-document.querySelector('#containermonnaie').insertAdjacentHTML('beforeend', `<div class="reponsemonnaie">
-Vous avez donné : ${argent}€ et vous devez payer : ${somme}€
+document.querySelector('#containermonnaie').insertAdjacentHTML('beforeend', `<div class="reponsemonnaie mt-3">
+Vous avez donné : ${argent}€ et vous devez payer : ${somme}€.
 <br>
-Nous devons vous rendre :${piece}
+Nous devons vous rendre :${piece}.
 </div>`)
 console.log(`Nous devons vous rendre :${piece}`);
 })
