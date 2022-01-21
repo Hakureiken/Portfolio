@@ -25,3 +25,48 @@ a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+a:hover img {
+    border: 3px solid red;
+}
+/* design de l'échiquier */
+
+
+.damier {
+    min-height: 64.58px;
+    width: 11.33% !important;
+}
+
+.damier input {
+    text-align: center;
+    background: none;
+    min-height: 100%;
+    max-width: 100%;
+}
+
+.echec > .row > * {
+    padding: 0 !important;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+
+.white {
+     background: white;
+     color: black;
+}
+.black {
+    background: black;
+    color: white !important;
+}
+
+.black input {
+    font-size: 1.5em;
+    color: white;
+}
+
+.white input {
+    font-size: 1.5em;
+    color: black;
+}

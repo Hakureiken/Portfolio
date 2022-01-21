@@ -1,3 +1,5 @@
+console.log(document.querySelector('#containermonnaie'));
+console.log(document.querySelector('#containermonnaie p').textContent);
 
 let startrendu = document.querySelector("#monnaie");
 console.log(startrendu);
