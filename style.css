@@ -32,8 +32,8 @@ a:hover img {
 /* design de l'échiquier */
 
 .damier {
-    height: 8vh;
-    width: 11.33% !important;
+    height: 9vh;
+    width: 12.5% !important;
 }
 
 .damier input {
@@ -62,12 +62,12 @@ a:hover img {
 
 .black input {
     font-size: 1.5em;
-    color: white;
+    color: red;
 }
 
 .white input {
     font-size: 1.5em;
-    color: black;
+    color: red;
 }
 
 .boolean {

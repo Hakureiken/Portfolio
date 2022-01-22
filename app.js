@@ -149,6 +149,6 @@ document.querySelector('#startechec').addEventListener('click', function(){
             }
     }
     console.log(booleenend);
-    document.querySelector('#echec #result').insertAdjacentHTML("beforebegin",`<div class="boolean text-center">${booleenend}</div>`)
+    document.querySelector('#echec #result').insertAdjacentHTML("beforebegin",`<div class="boolean text-center">Résultat du check : ${booleenend}</div>`)
     return (booleenend);
 })
