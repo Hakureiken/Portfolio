@@ -14,45 +14,45 @@
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <h2>Qui suis-je?</h2>
-                <p>Je suis passionné par l'Astronomie, les Mathématiques, l'Informatique ainsi par les Mangas. Pendant que je travaillais en espace vert, j'avais envie de me lancer en tant que développeur web j'ai donc suivi la formation RAN PRO métier du numérique et aussi travaillé de moi-même avec de petit projet de mon côté.</p>
+                <h2 onclick="modifyText('jeSuis')" id="jeSuis">Qui suis-je?</h2>
+                <p onclick="modifyText('jeSuis2')" id="jeSuis2">Je suis passionné par l'Astronomie, les Mathématiques, l'Informatique ainsi que par les Mangas. Lors de mon travail en espace vert, j'ai décidé de me lancer en tant que développeur web j'ai donc suivi la formation RAN PRO métier du numérique et aussi réalisé des petits projets de mon côté.</p>
             </div>
         </div>
     </div>
 
     <div class="container">
         <div class="row justify-content-center">
-            <h3>Mes créations</h3>
+            <h3 onclick="modifyText('creation')" id="creation">Mes créations.</h3>
             <div class="col-md-6 text-center">
                 <h4><a href="https://troyespetitschats.fr/" target="_blank">Site Troyespetitschats</a></h4>
                 <a href="https://troyespetitschats.fr/" target="_blank">
                     <img src="image/Troyespetitschats.png" alt="Troyespetitschats">
                 </a>
-                <p>Avec 2 collègues nous avons fait le site d'un bar à chats sur Troyes lors de notre stage pour la formation RAN PRO métier du numérique, Troyespetitschats sur Wordpress</p>
+                <p onclick="modifyText('textTpc')" id="textTpc">Avec 2 collègues nous avons fait le site d'un bar à chats sur Troyes lors de notre stage pour la formation RAN PRO métier du numérique, Troyespetitschats sur Wordpress.</p>
             </div>
             <div class="col-md-6 text-center">
                 <h4><a href="https://hakureiken.github.io/space_tourism_site/" target="_blank">Projet Space Tourism</a></h4>
                 <a href="https://hakureiken.github.io/space_tourism_site/" target="_blank">
                     <img src="image/Space_tourism.png" alt="Space_tourism">
                 </a>
-                <p>Pour m'entrainer après la formation, j'ai décidé de réaliser ce petit projet de design entre autre pour le côté responsive.</p>
+                <p onclick="modifyText('textSpace')" id="textSpace">Pour m'entrainer après la formation, j'ai décidé de réaliser ce petit projet de design entre autre pour le côté responsive.</p>
             </div>
-            <div class="col-md-6 text-center">
+            <div class="col-xl-6 text-center">
                 <h4><a href="https://hakureiken.github.io/Projet_Cyberpunk/" target="_blank">Projet Cyberpunk</a></h4>
                 <a href="https://hakureiken.github.io/Projet_Cyberpunk/" target="_blank">
                     <img src="image/Cyberpunk.png" alt="Cyberpunk">
                 </a>
-                <p>Projet en cours, pour m'entrainer mais cette fois on va toucher au javascript surtout et au design, le responsive viendra à la fin</p>
+                <p onclick="modifyText('textCyberpunk')" id="textCyberpunk">Projet en cours, pour m'entrainer mais cette fois on va toucher au javascript surtout et au design, le responsive viendra à la fin.</p>
             </div>
             <div class="col-md-6 text-center">
                 
             </div>
         </div>
         <div class="row justify-content-center">
-            <h3>Exercice d'algorithme</h3>
-            <div class="col-md-6 text-start echec" id="echec">
-                <h4>Exercice de l'échiquier</h4>
-                <p>Pour cet exercice, vous devez placer les différentes pièces noires ( p (pion), f (fou), d (dame), r (roi), t (tour), c (cavalier)) sur les cases présente de l'échiquier. Ensuite vous placerez le cavalier blanc (C (cavalier)). Vous verrez alors, si celui-ci est capable de capturer les différentes pièces.</p>
+            <h3 onclick="modifyText('algo')" id="algo">Exercice d'algorithme.</h3>
+            <div class="col-xl-6 text-start echec" id="echec">
+                <h4>Exercice de l'échiquier.</h4>
+                <p onclick="modifyText('textEchec')" id="textEchec">Pour cet algorithme, vous devez placer les différentes pièces noires ( p (pion), f (fou), d (dame), r (roi), t (tour), c (cavalier)) sur les cases présente de l'échiquier. Ensuite vous placerez le cavalier blanc (C (cavalier)). Vous verrez alors, si celui-ci est capable de capturer une pièce noire.</p>
                 <div class="row">
                     <div class="damier black" id="result">
                         <input type="text" placeholder="A1">
@@ -262,14 +262,13 @@
                         <input type="text" placeholder="H8">
                     </div>
                 </div>
-                <button id="startechec" type="submit" class="startechec">Lancez le test pour savoir si un cavalier blanc (C) peut prendre une pièce noire</button>
+                <button id="startechec" type="submit" class="startechec" onclick="modifyText('startechec')">Lancez le test pour savoir si un cavalier blanc (C) peut prendre une pièce noire.</button>
                 
             </div>
             <div class="col-md-6 text-center" id="containermonnaie">
-                <h4>Exercice du rendue de monnaie</h4>
-                <p>Ici, vous pouvez tester un algorithme que j'ai fait pendant la formation à la RAN PRO en tant qu'exercice. Attention, si vous lancez l'algorithme, ne changez pas d'onglet sous peine de faire échouer le test, merci.
-                </p>
-                <button id="monnaie">Testez ici l'algorithme de rendue de monnaie</button>
+                <h4 onclick="modifyText('algoMonnaie')" id="algoMonnaie">Exercice du rendue de monnaie.</h4>
+                <p onclick="modifyText('textMonnaie')" id="textMonnaie">Ici, vous pouvez tester un algorithme que j'ai fait pendant la formation à la RAN PRO en tant qu'exercice. Attention, si vous lancez l'algorithme, ne changez pas d'onglet sous peine de faire échouer le test, merci.</p>
+                <button onclick="modifyText('monnaie')" id="monnaie">Testez ici l'algorithme de rendue de monnaie.</button>
                 
             </div>
         </div>
