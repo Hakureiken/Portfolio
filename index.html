@@ -13,7 +13,7 @@
 <body class="fond">
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-xl-6">
                 <h2 onclick="modifyText('jeSuis')" id="jeSuis">Qui suis-je?</h2>
                 <p onclick="modifyText('jeSuis2')" id="jeSuis2">Je suis passionné par l'Astronomie, les Mathématiques, l'Informatique ainsi que par les Mangas. Lors de mon travail en espace vert, j'ai décidé de me lancer en tant que développeur web j'ai donc suivi la formation RAN PRO métier du numérique et aussi réalisé des petits projets de mon côté.</p>
             </div>
@@ -21,16 +21,16 @@
     </div>
 
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mb-5">
             <h3 onclick="modifyText('creation')" id="creation">Mes créations.</h3>
-            <div class="col-md-6 text-center">
+            <div class="col-12 col-xl-6 text-center mb-5">
                 <h4><a href="https://troyespetitschats.fr/" target="_blank">Site Troyespetitschats</a></h4>
                 <a href="https://troyespetitschats.fr/" target="_blank">
                     <img src="image/Troyespetitschats.png" alt="Troyespetitschats">
                 </a>
                 <p onclick="modifyText('textTpc')" id="textTpc">Avec 2 collègues nous avons fait le site d'un bar à chats sur Troyes lors de notre stage pour la formation RAN PRO métier du numérique, Troyespetitschats sur Wordpress.</p>
             </div>
-            <div class="col-md-6 text-center">
+            <div class="col-12 col-xl-6 text-center mb-5">
                 <h4><a href="https://hakureiken.github.io/space_tourism_site/" target="_blank">Projet Space Tourism</a></h4>
                 <a href="https://hakureiken.github.io/space_tourism_site/" target="_blank">
                     <img src="image/Space_tourism.png" alt="Space_tourism">
@@ -50,9 +50,9 @@
         </div>
         <div class="row justify-content-center">
             <h3 onclick="modifyText('algo')" id="algo">Exercice d'algorithme.</h3>
-            <div class="col-xl-6 text-start echec" id="echec">
+            <div class="col-xl-6 echec d-flex flex-column" id="echec">
                 <h4>Exercice de l'échiquier.</h4>
-                <p onclick="modifyText('textEchec')" id="textEchec">Pour cet algorithme, vous devez placer les différentes pièces noires ( p (pion), f (fou), d (dame), r (roi), t (tour), c (cavalier)) sur les cases présente de l'échiquier. Ensuite vous placerez le cavalier blanc (C (cavalier)). Vous verrez alors, si celui-ci est capable de capturer une pièce noire.</p>
+                <p onclick="modifyText('textEchec')" id="textEchec">Pour cet algorithme, vous devez placer les différentes pièces noires ( p (pion), f (fou), d (dame), r (roi), t (tour), c (cavalier)) sur les cases présente de l'échiquier. Ensuite vous placerez le/les cavalier(s) blanc(s) (C (cavalier)). Vous verrez alors, si celui-ci est capable de capturer une pièce noire.</p>
                 <div class="row">
                     <div class="damier black" id="result">
                         <input type="text" placeholder="A1">
@@ -274,7 +274,33 @@
         </div>
     </div>
 
-    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h4>Mes Compétences</h4>
+                <ul>
+                    <li>
+                        Analyse et résolution des problèmes
+                    </li>
+                    <li>
+                        Adaptabilité
+                    </li>
+                    <li>
+                        Rigoureux
+                    </li>
+                    <li>
+                        Autonome
+                    </li>
+                    <li>
+                        Polyvalent
+                    </li>
+                    <li>
+                        À l'écoute
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     
 </body>

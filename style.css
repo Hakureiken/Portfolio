@@ -74,3 +74,14 @@ a:hover img {
     font-size: 3em;
     color:blue;
 }
+
+/* Compétences */
+
+ul {
+    list-style-type: none;
+}
+
+li:before {
+    content: "★";
+    
+}
