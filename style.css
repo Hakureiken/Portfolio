@@ -2,6 +2,7 @@
 
 .fond {
     background: url(image/fond.png);
+    background-attachment: fixed;
     height: 100vh;
     background-size: 100% 100%;
     
