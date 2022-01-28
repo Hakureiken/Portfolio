@@ -178,6 +178,10 @@ let eleventh = "Ici, vous pouvez tester un algorithme que j'ai fait pendant la f
     let eleventh1 = "Here, you can test an algorythm i make when i was in formation RAN PRO. WARNING, if you want to try it, don't change tab, the test will fails."
 let twelfth = "Testez ici l'algorithme de rendue de monnaie."
     let twelfth1 = "Click here to test this algorythm."
+let thirteenth = "Système solaire"
+    let thirteenth1 = "Solar system"
+let fourteenth ="J'ai fait ici une petite représentation de la rotation des planètes du système solaire."
+    let fourteenth1 ="I make this representation of the rotation of the planet orbit"
 function modifyText(id) {
     let switchText = document.getElementById(id)
 
@@ -253,6 +257,18 @@ function modifyText(id) {
         switchText.firstChild.nodeValue = twelfth1
     } else if (switchText.firstChild.nodeValue === twelfth1) {
         switchText.firstChild.nodeValue = twelfth
+    }
+
+    if (switchText.firstChild.nodeValue === thirteenth) {
+        switchText.firstChild.nodeValue = thirteenth1
+    } else if (switchText.firstChild.nodeValue === thirteenth1) {
+        switchText.firstChild.nodeValue = thirteenth
+    }
+
+    if (switchText.firstChild.nodeValue === fourteenth) {
+        switchText.firstChild.nodeValue = fourteenth1
+    } else if (switchText.firstChild.nodeValue === fourteenth1) {
+        switchText.firstChild.nodeValue = fourteenth
     }
 }
 
