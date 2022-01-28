@@ -33,7 +33,7 @@ a:hover img {
 
 /* Système solaire */
 .espace {
-    min-height: 80%;
+    min-height: 50vh;
     display: flex;
     background: url(image/Espace.jfif);
     background-repeat: no-repeat;
