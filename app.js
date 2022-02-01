@@ -271,5 +271,3 @@ function modifyText(id) {
         switchText.firstChild.nodeValue = fourteenth
     }
 }
-
-  
