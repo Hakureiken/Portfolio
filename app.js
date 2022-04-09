@@ -64,6 +64,8 @@ Nous devons vous rendre :${piece}.
 console.log(`Nous devons vous rendre :${piece}`);
 })
 
+
+// algo pour l'échec
 document.querySelector('#startechec').addEventListener('click', function(){
     let plateau = []
     let ligne = [], ligne1=[], ligne2 = [], ligne3 = [], ligne4 = [], ligne5 = [], ligne6 = [], ligne7 = [], ligne8 = [];
@@ -154,120 +156,29 @@ document.querySelector('#startechec').addEventListener('click', function(){
 })
 
 // switch du texte en anglais/français
-let first = "Qui suis-je?"
-    let first1 = "Who am I?"
-let second = "Je suis passionné par l'Astronomie, les Mathématiques, l'Informatique ainsi que par les Mangas. Lors de mon travail en espace vert, j'ai décidé de me lancer en tant que développeur web j'ai donc suivi la formation RAN PRO métier du numérique et aussi réalisé des petits projets de mon côté."
-    let second1 = "I'm passionate by astronomy, Mathematics, computer, manga. When working in green space, i decided to start a new job as developer web si followed the RAN PRO digital and i also make some little project on my own"
-let third = "Mes créations."
-    let third1 = "My creations."
-let fourth = "Avec 2 collègues nous avons fait le site d'un bar à chats sur Troyes lors de notre stage pour la formation RAN PRO métier du numérique, Troyespetitschats sur Wordpress."
-    let fourth1 = "With 2 colleagues we make a cat bar site in Troyes on Wordpress during our 'stage' for the formation RAN PRO."
-let fifth = "Pour m'entrainer après la formation, j'ai décidé de réaliser ce petit projet de design entre autre pour le côté responsive."
-    let fifth1 = "For training during my formation, i decided to make a little design project responsive."
-let sixth = "Projet en cours, pour m'entrainer mais cette fois on va toucher au javascript surtout et au design, le responsive viendra à la fin."
-    let sixth1 = "Project in progress, training with javaScript and design. I'll make the responsive at the end."
-let seventh = "Exercice d'algorithme."
-    let seventh1 = "Algorythm exercice."
-let eighth = "Pour cet algorithme, vous devez placer les différentes pièces noires ( p (pion), f (fou), d (dame), r (roi), t (tour), c (cavalier)) sur les cases présente de l'échiquier. Ensuite vous placerez le/les cavalier(s) blanc(s) (C (cavalier)). Vous verrez alors, si celui-ci est capable de capturer une pièce noire."
-    let eighth1 = "For this algorythm, you have to place different black piece in the chess (p (pawn), f (bishop), d (queen), r (king), t (rook), c (knight)). When you're done, place a white knight (C (knight)). You'll see if the white knight is able to take a black piece."
+
+let switchFrEng = document.getElementById('switchFrEng');
+
+switchFrEng.addEventListener('click', function switchFrToEng() {
+    let testblock = document.querySelectorAll('p, h2, h3, h4');
+    console.log(testblock);
+
+    for (let i = 0; i < testblock.length; i++) {
+        testblock[i].classList.toggle('none');
+    }
+    
+    if (switchFrEng.innerHTML === 'Switch to English') {
+        switchFrEng.innerHTML = 'Changer en Français';
+    } else if (switchFrEng.innerHTML === 'Changer en Français') {
+        switchFrEng.innerHTML = 'Switch to English';
+    }
+
+
+})
+
 let nineth = "Lancez le test pour savoir si un cavalier blanc (C) peut prendre une pièce noire."
     let nineth1 = "Run the test to see if a white knight (C) can take a black piece."
-let tenth = "Exercice du rendue de monnaie."
-    let tenth1 = "Exercice change."
-let eleventh = "Ici, vous pouvez tester un algorithme que j'ai fait pendant la formation à la RAN PRO en tant qu'exercice. Attention, si vous lancez l'algorithme, ne changez pas d'onglet sous peine de faire échouer le test, merci."
-    let eleventh1 = "Here, you can test an algorythm i make when i was in formation RAN PRO. WARNING, if you want to try it, don't change tab, the test will fails."
+
+
 let twelfth = "Testez ici l'algorithme de rendue de monnaie."
     let twelfth1 = "Click here to test this algorythm."
-let thirteenth = "Système solaire"
-    let thirteenth1 = "Solar system"
-let fourteenth ="J'ai fait ici une petite représentation de la rotation des planètes du système solaire."
-    let fourteenth1 ="I make this representation of the rotation of the planet orbit"
-function modifyText(id) {
-    let switchText = document.getElementById(id)
-
-    if (switchText.firstChild.nodeValue === first) {
-        switchText.firstChild.nodeValue = first1
-    } else if (switchText.firstChild.nodeValue === first1) {
-        switchText.firstChild.nodeValue = first
-    }
-
-    if (switchText.firstChild.nodeValue === second) {
-        switchText.firstChild.nodeValue = second1
-    } else if (switchText.firstChild.nodeValue === second1) {
-        switchText.firstChild.nodeValue = second
-    }
-
-    if (switchText.firstChild.nodeValue === third) {
-        switchText.firstChild.nodeValue = third1
-    } else if (switchText.firstChild.nodeValue === third1) {
-        switchText.firstChild.nodeValue = third
-    }
-
-    if (switchText.firstChild.nodeValue === fourth) {
-        switchText.firstChild.nodeValue = fourth1
-    } else if (switchText.firstChild.nodeValue === fourth1) {
-        switchText.firstChild.nodeValue = fourth
-    }
-
-    if (switchText.firstChild.nodeValue === fifth) {
-        switchText.firstChild.nodeValue = fifth1
-    } else if (switchText.firstChild.nodeValue === fifth1) {
-        switchText.firstChild.nodeValue = fifth
-    }
-
-    if (switchText.firstChild.nodeValue === sixth) {
-        switchText.firstChild.nodeValue = sixth1
-    } else if (switchText.firstChild.nodeValue === sixth1) {
-        switchText.firstChild.nodeValue = sixth
-    }
-
-    if (switchText.firstChild.nodeValue === seventh) {
-        switchText.firstChild.nodeValue = seventh1
-    } else if (switchText.firstChild.nodeValue === seventh1) {
-        switchText.firstChild.nodeValue = seventh
-    }
-
-    if (switchText.firstChild.nodeValue === eighth) {
-        switchText.firstChild.nodeValue = eighth1
-    } else if (switchText.firstChild.nodeValue === eighth1) {
-        switchText.firstChild.nodeValue = eighth
-    }
-
-    if (switchText.firstChild.nodeValue === nineth) {
-        switchText.firstChild.nodeValue = nineth1
-    } else if (switchText.firstChild.nodeValue === nineth1) {
-        switchText.firstChild.nodeValue = nineth
-    }
-
-    if (switchText.firstChild.nodeValue === tenth) {
-        switchText.firstChild.nodeValue = tenth1
-    } else if (switchText.firstChild.nodeValue === tenth1) {
-        switchText.firstChild.nodeValue = tenth
-    }
-
-    if (switchText.firstChild.nodeValue === eleventh) {
-        switchText.firstChild.nodeValue = eleventh1
-        console.log(eleventh1);
-    } else if (switchText.firstChild.nodeValue === eleventh1) {
-        switchText.firstChild.nodeValue = eleventh
-        console.log(eleventh);
-    }
-
-    if (switchText.firstChild.nodeValue === twelfth) {
-        switchText.firstChild.nodeValue = twelfth1
-    } else if (switchText.firstChild.nodeValue === twelfth1) {
-        switchText.firstChild.nodeValue = twelfth
-    }
-
-    if (switchText.firstChild.nodeValue === thirteenth) {
-        switchText.firstChild.nodeValue = thirteenth1
-    } else if (switchText.firstChild.nodeValue === thirteenth1) {
-        switchText.firstChild.nodeValue = thirteenth
-    }
-
-    if (switchText.firstChild.nodeValue === fourteenth) {
-        switchText.firstChild.nodeValue = fourteenth1
-    } else if (switchText.firstChild.nodeValue === fourteenth1) {
-        switchText.firstChild.nodeValue = fourteenth
-    }
-}

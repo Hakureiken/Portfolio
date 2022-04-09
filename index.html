@@ -1,52 +1,93 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <script src="app.js" defer></script>
 </head>
+
 <body class="fond">
     <!-- à propos de moi -->
     <div class="container">
         <div class="row">
-            <div class="col-12 col-xl-6">
-                <h2 onclick="modifyText('jeSuis')" id="jeSuis">Qui suis-je?</h2>
-                <p onclick="modifyText('jeSuis2')" id="jeSuis2">Je suis passionné par l'Astronomie, les Mathématiques, l'Informatique ainsi que par les Mangas. Lors de mon travail en espaces verts, j'ai décidé de me lancer en tant que développeur web j'ai donc suivi la formation RAN PRO métiers du numérique et aussi réalisé des petits projets de mon côté.</p>
+            <div class="col-10 col-xl-6">
+                <h2>À Propos</h2>
+                <h2 class="none">About me</h2>
+
+                <p>Je suis passionné par l'Astronomie, les Mathématiques, l'Informatique ainsi que par les Mangas. Lors
+                    de mon travail en espaces verts, j'ai décidé de me lancer en tant que développeur web j'ai donc
+                    suivi la formation RAN PRO métiers du numérique et aussi réalisé des petits projets de mon côté.</p>
+                <p class="none">I'm passionate by astronomy, Mathematics, computer, manga. When working in green space,
+                    i decided to start a new job as developer web si followed the RAN PRO digital and i also make some
+                    little project on my own.</p>
+            </div>
+            <div class="col-2 col-xl-6">
+                <button id="switchFrEng">Switch to English</button>
             </div>
         </div>
     </div>
-<!-- mes créations -->
+    <!-- mes créations -->
     <div class="container">
-        <div class="row justify-content-center mb-5">
-            <h3 onclick="modifyText('creation')" id="creation">Mes créations.</h3>
+        <div class="row justify-content-center my-5">
+            <h3>Mes créations.</h3>
+            <h3 class="none">My creations.</h3>
+
             <div class="col-12 col-xl-6 text-center mb-5">
                 <h4><a href="https://troyespetitschats.fr/" target="_blank">Site Troyespetitschats</a></h4>
+                <h4 class="none"><a href="https://troyespetitschats.fr/" target="_blank">Troyespetitschats Website</a>
+                </h4>
+
                 <a href="https://troyespetitschats.fr/" target="_blank">
                     <img src="image/Troyespetitschats.png" alt="Troyespetitschats">
                 </a>
-                <p onclick="modifyText('textTpc')" id="textTpc">Avec 2 collègues nous avons fait le site d'un bar à chats sur Troyes lors de notre stage pour la formation RAN PRO métiers du numérique, Troyespetitschats sur Wordpress.</p>
+
+                <p>Avec 2 collègues nous avons fait le site d'un bar à chats sur Troyes lors de notre stage pour la
+                    formation RAN PRO métiers du numérique, Troyespetitschats sur Wordpress.</p>
+                <p class="none">With 2 colleagues we make a cat bar site in Troyes on Wordpress during our 'stage' for
+                    the formation RAN PRO.</p>
             </div>
             <div class="col-12 col-xl-6 text-center mb-5">
-                <h4><a href="https://hakureiken.github.io/space_tourism_site/" target="_blank">Projet Space Tourism</a></h4>
+                <h4><a href="https://hakureiken.github.io/space_tourism_site/" target="_blank">Projet Space Tourism</a>
+                </h4>
+                <h4 class="none"><a href="https://hakureiken.github.io/space_tourism_site/" target="_blank">Space
+                        Tourism Project</a></h4>
+
                 <a href="https://hakureiken.github.io/space_tourism_site/" target="_blank">
                     <img src="image/Space_tourism.png" alt="Space_tourism">
                 </a>
-                <p onclick="modifyText('textSpace')" id="textSpace">Pour m'entrainer après la formation, j'ai décidé de réaliser ce petit projet de design entre autre pour le côté responsive.</p>
+
+                <p>Pour m'entrainer après la formation, j'ai décidé de réaliser ce petit projet de design entre autre
+                    pour le côté responsive.</p>
+                <p class="none">For training during my formation, i decided to make a little design project responsive.
+                </p>
             </div>
             <div class="col-xl-6 text-center">
                 <h4><a href="https://hakureiken.github.io/Projet_Cyberpunk/" target="_blank">Projet Cyberpunk</a></h4>
+                <h4 class="none"><a href="https://hakureiken.github.io/Projet_Cyberpunk/" target="_blank">Cyberpunk
+                        project</a></h4>
+
                 <a href="https://hakureiken.github.io/Projet_Cyberpunk/" target="_blank">
                     <img src="image/Cyberpunk.png" alt="Cyberpunk" class="mb-4">
                 </a>
-                <p onclick="modifyText('textCyberpunk')" id="textCyberpunk">Projet en cours, pour m'entrainer mais cette fois on va toucher au javascript surtout et au design, le responsive viendra à la fin.</p>
+
+                <p>Projet en cours, pour m'entrainer mais cette fois on va toucher au javascript surtout et au design,
+                    le responsive viendra à la fin.</p>
+                <p class="none">Project in progress, training with javaScript and design. I'll make the responsive at
+                    the end.</p>
             </div>
             <div class="col-12 col-xl-6 text-center">
-                <h4 id="systeme" onclick="modifyText('systeme')">Système solaire</h4>
+                <h4>Système solaire</h4>
+                <h4 class="none">Solar system</h4>
+
                 <div class="espace mb-4">
                     <div class="sun"></div>
                     <div class="mercure"></div>
@@ -58,36 +99,64 @@
                     <div class="uranus"></div>
                     <div class="neptune"></div>
                 </div>
-                
-                <p id="textsysteme" onclick="modifyText('textsysteme')">J'ai fait ici une petite représentation de la rotation des planètes du système solaire.</p>
+
+                <p>J'ai fait ici une petite représentation de la rotation des planètes du système solaire.</p>
+                <p class="none">I make this representation of the rotation of the planet in our solar system</p>
             </div>
             <!-- projet d'interaction pour un site E-commerce -->
-            <div class="col-12 col-xl-6 text-center mb-5">
+            <div class="col-12 col-xl-6 text-center my-5">
                 <h4>
                     <a href="https://hakureiken.github.io/E-Commerce/" target="_blank">Projet E-commerce</a>
                 </h4>
+                <h4 class="none">
+                    <a href="https://hakureiken.github.io/E-Commerce/" target="_blank">E-commerce project</a>
+                </h4>
+
                 <a href="https://hakureiken.github.io/space_tourism_site/" target="_blank">
                     <img src="image/e-commerce.png" alt="e-commerce">
                 </a>
-                <p onclick="modifyText('textCommerce')" id="textCommerce">Pour m'entrainer sur le JavaScript pendant ma formation au Greta, j'ai fait cette page avec les interactions demandées par frontend mentor.</p>
+
+                <p>Pour m'entrainer sur le JavaScript pendant ma formation au Greta, j'ai fait cette page avec les
+                    interactions demandées par frontend mentor.</p>
+                <p class="none">A little training while i'm still learning at Greta, it's from frontend mentor, level
+                    3/5.</p>
             </div>
-            <div class="col-12 col-xl-6 text-center mb-5">
+            <div class="col-12 col-xl-6 text-center my-5">
                 <h4>
-                    <a href="https://hakureiken.github.io/Janken/" target="_blank">Projet E-commerce</a>
+                    <a href="https://hakureiken.github.io/Janken/" target="_blank">Projet Janken</a>
                 </h4>
+                <h4 class="none">
+                    <a href="https://hakureiken.github.io/Janken/" target="_blank">Janken project</a>
+                </h4>
+
                 <a href="https://hakureiken.github.io/Janken/" target="_blank">
                     <img src="image/janken.png" alt="Janken">
                 </a>
-                <p onclick="modifyText('textJanken')" id="textJanken">Pour m'entrainer sur le JavaScript pendant ma formation au Greta, j'ai fait ce projet de frontend mentor sur un pierre feuille ciseaux, arriverez-vous à battre l'IA ?</p>
+
+                <p>Pour m'entrainer sur le JavaScript pendant ma formation au Greta, j'ai fait ce projet de frontend
+                    mentor sur un pierre feuille ciseaux, arriverez-vous à battre l'IA ?</p>
+                <p class="none">While i'm learning in Greta, i took a project on frontend mentor. It's a game rock
+                    paper, scissor, enjoy. level 4/5</p>
             </div>
         </div>
 
         <!-- les algo' pendant la formation -->
         <div class="row justify-content-center">
-            <h3 onclick="modifyText('algo')" id="algo">Exercice d'algorithme.</h3>
-            <div class="col-xl-6 echec d-flex flex-column" id="echec">
+            <h3 class="" id="algo">Exercice d'algorithme.</h3>
+            <h3 class="none" id="algo">Algorythm exercice.</h3>
+            <div class="col-xl-6 echec d-flex flex-column my-5" id="echec">
                 <h4>Exercice de l'échiquier.</h4>
-                <p onclick="modifyText('textEchec')" id="textEchec">Pour cet algorithme, vous devez placer les différentes pièces noires ( p (pion), f (fou), d (dame), r (roi), t (tour), c (cavalier)) sur les cases présentes de l'échiquier. Ensuite vous placerez le/les cavalier(s) blanc(s) (C (cavalier)). Vous verrez alors, si celui-ci est capable de capturer une pièce noire.</p>
+                <h4 class="none">Chess exercice</h4>
+
+                <p>Pour cet algorithme, vous devez placer les différentes pièces noires ( p (pion), f (fou), d (dame), r
+                    (roi), t (tour), c (cavalier)) sur les cases présentes de l'échiquier. Ensuite vous placerez le/les
+                    cavalier(s) blanc(s) (C (cavalier)). Vous verrez alors, si celui-ci est capable de capturer une
+                    pièce noire.</p>
+                <p class="none">For this algorythm, you have to place different black piece in the chess (p (pawn), f
+                    (bishop), d (queen), r (king), t (rook), c (knight)). When you're done, place a white knight (C
+                    (knight)). You'll see if the white knight is able to take a black piece.</p>
+                <button id="startechec" type="submit" class="startechec">Lancez le test pour savoir si un cavalier blanc
+                    (C) peut prendre une pièce noire.</button>
                 <div class="row">
                     <div class="damier black" id="result">
                         <input type="text" placeholder="A1">
@@ -218,7 +287,6 @@
                         <input type="text" placeholder="E8">
                     </div>
                 </div>
-                
                 <div class="row">
                     <div class="damier white">
                         <input type="text" placeholder="F1">
@@ -297,22 +365,29 @@
                         <input type="text" placeholder="H8">
                     </div>
                 </div>
-                <button id="startechec" type="submit" class="startechec" onclick="modifyText('startechec')">Lancez le test pour savoir si un cavalier blanc (C) peut prendre une pièce noire.</button>
-                
+
+
             </div>
-            <div class="col-md-6 text-center" id="containermonnaie">
-                <h4 onclick="modifyText('algoMonnaie')" id="algoMonnaie">Exercice du rendue de monnaie.</h4>
-                <p onclick="modifyText('textMonnaie')" id="textMonnaie">Ici, vous pouvez tester un algorithme que j'ai fait pendant la formation à la RAN PRO en tant qu'exercice. Attention, si vous lancez l'algorithme, ne changez pas d'onglet sous peine de faire échouer le test, merci.</p>
-                <button onclick="modifyText('monnaie')" id="monnaie">Testez ici l'algorithme de rendue de monnaie.</button>
-                
+            <div class="col-md-6 text-center my-5" id="containermonnaie">
+                <h4>Exercice du rendue de monnaie.</h4>
+                <h4 class="none">Exercice change.</h4>
+
+                <p>Ici, vous pouvez tester un algorithme que j'ai fait pendant la formation à la RAN PRO en tant
+                    qu'exercice. Attention, si vous lancez l'algorithme, ne changez pas d'onglet sous peine de faire
+                    échouer le test, merci.</p>
+                <p class="none">Here, you can test an algorythm i make when i was in formation RAN PRO. WARNING, if you
+                    want to try it, don't change tab, the test will fails.</p>
+
+                <button id="monnaie">Testez ici l'algorithme de rendue de monnaie.</button>
+
             </div>
         </div>
     </div>
 
-    
 
 
-<!-- mes compétences -->
+
+    <!-- mes compétences -->
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">
@@ -342,33 +417,44 @@
                 <h4>Mes outils</h4>
                 <ul>
                     <li>
-                        <img src="image/2333390-html-html5-internet-website_85590.svg" alt="html5" style="background-color: white;width: 20px;">
+                        <img src="image/2333390-html-html5-internet-website_85590.svg" alt="html5"
+                            style="background-color: white;width: 20px;">
                         HTML 5
                     </li>
                     <li>
-                        <img src="image/css_shiled_logo_icon_145359.svg" alt="css3" style="background-color: white;width: 20px;">
+                        <img src="image/css_shiled_logo_icon_145359.svg" alt="css3"
+                            style="background-color: white;width: 20px;">
                         CSS3
                     </li>
                     <li>
-                        <img src="image/language_javascript_icon_135455.svg" alt="css3" style="background-color: white;width: 20px;">
+                        <img src="image/language_javascript_icon_135455.svg" alt="css3"
+                            style="background-color: white;width: 20px;">
                         JavaScript
                     </li>
                     <li>
-                        <img src="image/microsoft_visual_studio_code_icon_137397.svg" alt="css3" style="background-color: white;width: 20px;">
+                        <img src="image/microsoft_visual_studio_code_icon_137397.svg" alt="css3"
+                            style="background-color: white;width: 20px;">
                         Visual Studio Code
                     </li>
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bootstrap" viewBox="0 0 16 16">
-                            <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"/>
-                            <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"/>
-                          </svg> Bootstrap
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-bootstrap" viewBox="0 0 16 16">
+                            <path
+                                d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z" />
+                            <path
+                                d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z" />
+                        </svg> Bootstrap
                     </li>
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-wordpress" viewBox="0 0 16 16">
-                            <path d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218.02 0 .039.002.058.003l.031.003A6.838 6.838 0 0 0 8 1.137 6.855 6.855 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.864 6.864 0 0 0 3.868 6.176L1.73 5.206A6.837 6.837 0 0 0 1.137 8z"/>
-                            <path d="M6.061 14.583 8.121 8.6l2.109 5.78c.014.033.03.064.049.094a6.854 6.854 0 0 1-4.218.109zm7.96-9.876c.03.219.047.453.047.706 0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z"/>
-                            <path fill-rule="evenodd" d="M0 8c0-4.411 3.589-8 8-8 4.41 0 8 3.589 8 8s-3.59 8-8 8c-4.411 0-8-3.589-8-8zm.367 0c0 4.209 3.424 7.633 7.633 7.633 4.208 0 7.632-3.424 7.632-7.633C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8z"/>
-                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-wordpress" viewBox="0 0 16 16">
+                            <path
+                                d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218.02 0 .039.002.058.003l.031.003A6.838 6.838 0 0 0 8 1.137 6.855 6.855 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.864 6.864 0 0 0 3.868 6.176L1.73 5.206A6.837 6.837 0 0 0 1.137 8z" />
+                            <path
+                                d="M6.061 14.583 8.121 8.6l2.109 5.78c.014.033.03.064.049.094a6.854 6.854 0 0 1-4.218.109zm7.96-9.876c.03.219.047.453.047.706 0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z" />
+                            <path fill-rule="evenodd"
+                                d="M0 8c0-4.411 3.589-8 8-8 4.41 0 8 3.589 8 8s-3.59 8-8 8c-4.411 0-8-3.589-8-8zm.367 0c0 4.209 3.424 7.633 7.633 7.633 4.208 0 7.632-3.424 7.632-7.633C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8z" />
+                        </svg>
                         Wordpress
                     </li>
                 </ul>
@@ -376,6 +462,7 @@
         </div>
     </div>
 
-    
+
 </body>
+
 </html>

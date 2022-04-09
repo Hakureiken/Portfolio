@@ -32,6 +32,25 @@ a:hover img {
     border: 1px solid red;
 }
 
+.none {
+    display: none;
+}
+
+/* bouton switch langue */
+
+#switchFrEng {
+    width: 300px;
+    height: 70px;
+    color: azure;
+    background: none;
+    border: solid 2px white;
+    font-size: 2em;
+    position: fixed;
+    z-index: 10;
+    /* left: 75%;
+    top: 8%; */
+}
+
 /* Système solaire */
 .espace {
     min-height: 50vh;
